@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Log_in</title>
+    
+    <link rel="shortcut icon" href="images/roll_btn_icon.ico"/>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nanum+Gothic&family=Roboto&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nanum+Gothic&family=The+Nautigal:wght@700&display=swap" rel="stylesheet">  
+    <link rel="stylesheet" href="css/style2.css">
+   
+    <link rel="stylesheet" href="js/login.js">
+</head>
+<body>
+    <div class="wrapper">
+        <header class="header">
+            <p class="logo">
+                <a href="">
+                    Make Dessert
+                </a>
+            </p>
+            <ul class="menu">
+                <li><a href="">Brand</a></li>                
+                <li><a href="">Menu</a></li>
+                <li><a href="">Community</a></li>
+                <li><a href="">Sign In</a></li>
+            </ul>
+        </header>
+        <main class="main">
+            <section>
+                <!-- 상단 로그인을 이미지로 대체 -->
+                <img src="images/Login.png" alt="Log_in">
+                <form action="../main.html" method="POST">
+                    
+                    <!-- input 태그 안에 required를 사용하여 필수 값으로 지정해주고 공백일 시 페이지가 넘어가지 않도록 해준다.
+                        placeholder를 사용하면 아이디라고 표시 된다. -->
+                        
+                        <!-- 로그인은 for 태그로 만들고 로그인이므로 method는 POST방식 사용 -->
+                        <input type="text" id="id" style="margin-bottom:30px;" placeholder="아이디" required>
+                        <input type="password" id="password" placeholder="비밀번호" required>
+                        <p><a href="#">아이디 찾기 | 비밀번호 찾기 | 회원가입</a></p>
+                        <div id="login_btn"><button type="submit">로그인</button></div>
+                        <div id="easy">간편 로그인</div>
+                        <a href="https://accounts.kakao.com/"><img id="kakao" src="images/easy-kakao.png"></a>
+                        <a href="https://nid.naver.com/"><img id="naver" src="images/easy-naver.png"></a>
+                        <a href="https://www.facebook.com/login"><img id="facebook" src="images/easy-facebook.png"></a>
+                        <a href="https://google.com/accounts"><img id="google" src="images/easy-google.png"></a>
+                        
+                        
+                    </form>
+                    
+                </section>
+                
+            </main>
+        <footer class="footer">
+            
+            
+            <p id = "title">Make Dessert</p>
+            <p class="aa">대표번호 : 043-231-6325 | 팩스번호 : 043-231-4521 | 사업자번호: 168-04-3585 </p>
+            <p class="aa">|주소 : 충북 청주시 청원구 오창읍 각리 258-45| </p>
+            <p class="aa">design The Joy of Eatting</p>
+            
+            
+        </footer>
+    </div>
+</body>
+</html>

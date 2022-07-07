@@ -1,0 +1,130 @@
+@charset "UTF-8";
+
+body {
+    margin: 0;
+    background-color: rgba(243, 239, 224, 0.34);
+}
+
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 100px;
+    background-color: rgba(192, 174, 135);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-sizing: border-box;
+    padding: 0 70px 0 20px
+    
+    
+}
+
+
+.header .logo {
+    display: inline-block;
+    cursor: pointer;
+    font-family: 'The Nautigal', cursive;
+    font-size: 70px;
+}
+
+.header .logo a{
+    text-decoration: none;
+    color: white;
+}
+
+.header .menu {
+    display: flex;
+    font-family: 'Roboto', sans-serif; 
+    font-size: 20px;
+    transition: width 0.5s ease-in-out;
+}
+/* .header .logo {
+    position: absolute;
+    top: 10px;
+    left: 60px;
+    display: inline-block;
+    margin-top: 0;
+    cursor: pointer;
+    color: white;
+    font-family: 'The Nautigal', cursive;
+    font-size: 70px;
+    
+}
+
+.header .menu {
+    position: absolute;
+    top: 15px;
+    right: 90px;
+    display: inline-block;
+    font-family: 'Roboto', sans-serif; 
+    font-size: 20px;
+    transition: width 0.5s ease-in-out;
+} */
+.menu li::after{
+    content: "";
+    display: block;
+    margin: 3px 0 0 0;
+    width: 0;
+    height: 2px;
+    background-color: rgb(173, 145, 110);
+    transition: all 0.5s linear;
+}
+.menu li:hover::after{
+    width: 100%;
+}
+
+.header .menu li {
+    display: inline;
+    list-style: none;
+    margin-left: 20px;
+}
+
+.header .menu li a {
+    text-decoration: none;
+    color: white;
+}
+
+.header .menu li a:hover {
+    color: rgb(197, 197, 197);
+}
+
+.main {
+    height: 800px;
+}
+
+.footer {
+    padding-top: 30px;
+    padding-bottom: 20px;
+    width: 1920px;
+    
+    background-color: rgb(62, 67, 72);
+}
+
+.footer p{
+    margin: 0;
+}
+
+.footer .aa {
+    text-align: center;
+    color: white;
+    left: 47%;
+    bottom: 0;
+    padding-top: 20px;
+}
+
+.footer .aa:nth-child(3){
+    padding: 0;
+}
+.footer .aa:nth-child(4){
+    padding-top: 10px;
+}
+
+#title {
+    text-align: center;
+    color: white;
+    font-family: 'Roboto', sans-serif; 
+    font-size: 26px;
+   
+}
